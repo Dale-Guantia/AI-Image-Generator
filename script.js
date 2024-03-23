@@ -48,7 +48,7 @@ const generateAIImages = async (userPrompt, userImgQuantity) => {
 const handleFormSubmission = (e) => {
     e.preventDefault();
     
-    //Get user input and image quantity in the form 
+    //Get user input and image quantity in the form
     const userPrompt = e.srcElement[0].value;
     const userImgQuantity = e.srcElement[1].value;
 
