@@ -36,7 +36,7 @@ const generateAIImages = async (userPrompt, userImgQuantity) => {
             })
         });
 
-        //if(!response.ok) throw new Error("Failed to generate images! Please try again.");
+        if(!response.ok) throw new Error("Failed to generate images! Please try again.");
 
         const { data } = await response.json(); //Get data from response
         updateImageCard([...data]);
